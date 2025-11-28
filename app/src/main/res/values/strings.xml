@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">FlashcardApp</string>
-    <string name="who_is_the_44th_president_of_the_united_states">Who is the 44th president of the United States?</string>
+    <string name="who_is_the_44th_president_of_the_united_states">Qui est le 44e président des États-Unis ?</string>
     <string name="barack_obama">Barack Obama</string>
+    <string name="cancel">Annuler</string>
+    <string name="save">Enregistrer</string>
+    <string name="add_card">Ajouter une carte</string>
 </resources>

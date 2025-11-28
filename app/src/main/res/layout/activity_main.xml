@@ -1,30 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/rootMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:padding="24dp"
+    android:background="#FFFFFF">
 
     <TextView
-        android:id="@+id/flashcard_question"
-        android:layout_width="match_parent"
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/who_is_the_44th_president_of_the_united_states"
-        android:textSize="40sp"
-        android:gravity="center"
-        android:layout_centerInParent="true" />
+        android:textSize="20sp"
+        android:textColor="#222222"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="16dp" />
 
-
-    <TextView
-        android:id="@+id/flashcard_answer"
+    <Button
+        android:id="@+id/btnAnswer1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/barack_obama"
-        android:textSize="40sp"
-        android:gravity="center"
-        android:layout_centerInParent="true"
-        android:visibility="invisible" />
+        android:layout_below="@id/tvQuestion"
+        android:layout_marginTop="20dp"
+        android:text="George Washington" />
+
+    <Button
+        android:id="@+id/btnAnswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAnswer1"
+        android:layout_marginTop="10dp"
+        android:text="Barack Obama" />
+
+    <Button
+        android:id="@+id/btnAnswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAnswer2"
+        android:layout_marginTop="10dp"
+        android:text="Donald Trump" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/add_card"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_add"
+        android:tint="#2962FF" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="Question suivante"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_next" />
 
 </RelativeLayout>
